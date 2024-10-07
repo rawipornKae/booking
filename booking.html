@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BOOKING CAR</title>
+    <link rel="icon" type="image/x-icon" href="/frontend/img/icons8-car-16-2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/booking.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-box">
+            <div class="topnav" id="myTopnav">
+                <img src="/frontend/img/img_answer01-removebg-preview-new3.png" class="img-logo">
+                <a href="#Dashboard" class="bg profile">Rawiporn-CP</a>
+                <a href="#profile" class="bg icons profile">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a href="#notify">Notify</a>
+                <a href="#notify" class="icons notify">
+                    <i class="fa fa-bell"></i>
+                </a>
+                <a href="#bookingcar">Booking Car</a>
+                <a href="#bookingcar" class="icons bookingcar">
+                    <i class="fa fa-car"></i>
+                </a>
+                <a href="#bookinglists">Booking Lists</a>
+                <a href="#bookinglists" class="icons bookinglists">
+                    <i class="fa fa-book-open"></i>
+                </a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#dashboard" class="icons dashboard">
+                    <i class="fa fa-dashboard"></i>
+                </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="booking">
+        <div class="booking-form">
+            <h1 class="header-login">Booking Car</h1>
+        </div>
+    </div>
+    <div class="container">
+        <header class="head">Booking Car</header>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Booking Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Start Point</label>
+                            <input type="text" placeholder="Enter your start point" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Start Date</label>
+                            <input type="date" placeholder="Enter date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Start Time</label>
+                            <select required>
+                                <option disabled selected>Select time</option>
+                                <option>08.00</option>
+                                <option>09.00</option>
+                                <option>10.00</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Stop Point</label>
+                            <input type="text" placeholder="Enter your stop point" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Stop Date</label>
+                            <input type="date" placeholder="Enter date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Stop Time</label>
+                            <select required>
+                                <option disabled selected>Select time</option>
+                                <option>08.00</option>
+                                <option>09.00</option>
+                                <option>10.00</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="details ID">
+                    <!-- <span class="title">Please select your car</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input type="text" placeholder="Enter ID type" required>
+                        </div>
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" placeholder="Enter ID number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Issued Authority</label>
+                            <input type="text" placeholder="Enter issued authority" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Issued State</label>
+                            <input type="text" placeholder="Enter issued state" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Issued Date</label>
+                            <input type="date" placeholder="Enter your issued date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" placeholder="Enter expiry date" required>
+                        </div>
+                    </div> -->
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" placeholder="Permanent or Temporary" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter nationality" required>
+                        </div>
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter your state" required>
+                        </div>
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter your district" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" placeholder="Enter block number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter ward number" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="details family">
+                    <span class="title">Family Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Grandfather</label>
+                            <input type="text" placeholder="Enter grandfther name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Spouse Name</label>
+                            <input type="text" placeholder="Enter spouse name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Father in Law</label>
+                            <input type="text" placeholder="Father in law name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mother in Law</label>
+                            <input type="text" placeholder="Mother in law name" required>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="fas fa-chevron-circle-right"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/booking.js"></script>
+</body>
+
+</html>
